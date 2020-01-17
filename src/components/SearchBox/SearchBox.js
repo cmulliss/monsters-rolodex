@@ -1,0 +1,20 @@
+import React from 'react'
+
+import './SearchBox.css'
+
+const SearchBox = ({ placeholder, handleChange }) => {
+  return (
+    <div>
+      <input
+        className='search'
+        type='search'
+        placeholder={placeholder}
+        onChange={handleChange}
+      />
+    </div>
+  )
+}
+
+export default SearchBox
+
+// destructure off placeholder, so can use component again
